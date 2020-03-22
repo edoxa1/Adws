@@ -11,7 +11,7 @@ namespace Adws
         private string name = "Teacher";
         public void Print()
         {
-            Console.WriteLine(name);
+            Console.WriteLine("Название класса: " + name);
         }
     }
 }

@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace Adws
 {
-    
     class Student : IPrint, ICalc
     {
         private int[] marks = new int[] { 90,90,75,50,90 };
@@ -14,7 +13,7 @@ namespace Adws
         private int sum = 0;
         public void Print()
         {
-            Console.WriteLine(name);
+            Console.WriteLine("Название класса: " + name);
         }
         public void Calculate()
         {
@@ -22,7 +21,7 @@ namespace Adws
             {
                 sum += a;
             }
-            Console.WriteLine(sum/marks.Length);
+            Console.WriteLine($"Среднее значние: {(sum / marks.Length)}");
         }
     }
 }
